@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Space</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+.announcement {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+}
+
+.announcement h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Student Space</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="announcements">
+            <h2>Announcements</h2>
+            <div class="announcement">
+                <h3>Important Notice: Exam Schedule Change</h3>
+                <p>The exam schedule for this semester has been updated. Please check the new dates on the college website.</p>
+            </div>
+            <div class="announcement">
+                <h3>Library Closure on Public Holiday</h3>
+                <p>The library will remain closed on July 4th due to the public holiday. Plan your study schedules accordingly.</p>
+            </div>
+        </section>
+
+        <section id="courses">
+            <h2>My Courses</h2>
+            <ul>
+                <li><a href="#">Introduction to Computer Science</a></li>
+                <li><a href="#">Art History: Renaissance to Modern</a></li>
+                <li><a href="#">Mathematics for Engineers</a></li>
+                <li><a href="#">Business Ethics</a></li>
+            </ul>
+        </section>
+
+        <section id="grades">
+            <h2>My Grades</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Computer Science</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>Art History: Renaissance to Modern</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics for Engineers</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Business Ethics</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="schedule">
+            <h2>My Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>9:00 - 10:30 AM</td>
+                        <td rowspan="2">Introduction to Computer Science</td>
+                        <td rowspan="2">Mathematics for Engineers</td>
+                        <td></td>
+                        <td rowspan="2">Art History</td>
+                        <td rowspan="2">Business Ethics</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 AM - 12:15 PM</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

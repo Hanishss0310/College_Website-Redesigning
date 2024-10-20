@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Facility</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Hostel Facility</h1>
+        <nav>
+            <ul>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#leave-letter">Leave Letter</a></li>
+                <li><a href="#complaints">Complaints</a></li>
+                <li><a href="#room-allotments">Room Allotments</a></li>
+                <li><a href="#monthly-dishes">Monthly Dishes</a></li>
+                <li><a href="#contact-details">Contact Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="admission">
+        <h2>Admission</h2>
+        <p>Information and forms for hostel admission.</p>
+        <ul>
+            <li>Aadhar card</li>
+            <li>PAN card</li>
+            <li>10th Marksheet</li>
+            <li>Income Certificate</li>
+            <li>Caste Certificate</li>
+            <li>Medical Certificate</li>
+            <li>Behaviour Certificate</li>
+            <li>Transfer Certificate</li>
+            <li>And other relevant documents</li>
+        </ul>
+    </section>
+
+    <section id="leave-letter">
+        <h2>Leave Letter</h2>
+        <p>Request form for leave from hostel.</p>
+        <form action="#">
+            <label for="leaveReason">Reason for Leave:</label><br>
+            <textarea id="leaveReason" name="leaveReason" rows="4" placeholder="Enter reason for leave..." required></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="complaints">
+        <h2>Complaints</h2>
+        <p>Form to submit complaints related to hostel facilities.</p>
+        <form action="#">
+            <label for="complaintReason">Reason for Complaint:</label><br>
+            <textarea id="complaintReason" name="complaintReason" rows="4" placeholder="Enter reason for complaint..." required></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="room-allotments">
+        <h2>Room Allotments</h2>
+        <p>Details about room allotments and procedures.</p>
+        <form action="#">
+            <label for="roomChangeReason">Reason for Room Change:</label><br>
+            <textarea id="roomChangeReason" name="roomChangeReason" rows="4" placeholder="Enter reason for room change..." required></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section id="monthly-dishes">
+        <h2>Monthly Dishes</h2>
+        <p>Menu for monthly dishes served at the hostel.</p>
+        <ul>
+            <li>Pasta Carbonara</li>
+            <li>Chicken Tikka Masala</li>
+            <li>Sushi</li>
+            <li>Beef Wellington</li>
+            <li>Pad Thai</li>
+            <li>Lasagna</li>
+            <li>Seafood Paella</li>
+            <li>Ramen</li>
+            <li>Tacos</li>
+            <li>Butter Chicken</li>
+            <li>Pizza Margherita</li>
+            <li>Beef Stroganoff</li>
+            <li>Shrimp Scampi</li>
+            <li>Steak Frites</li>
+            <li>Moussaka</li>
+            <li>Biryani</li>
+            <li>Gyoza</li>
+            <li>Pho</li>
+            <li>Risotto</li>
+            <li>Chicken Satay</li>
+            <li>Grilled Cheese Sandwich</li>
+            <li>Paella</li>
+            <li>Crab Cakes</li>
+            <li>Falafel</li>
+            <li>Hamburger</li>
+            <li>Samosa</li>
+            <li>Macaroni and Cheese</li>
+            <li>Stuffed Bell Peppers</li>
+            <li>Quiche Lorraine</li>
+            <li>Beef Bourguignon</li>
+            <li>Fish and Chips</li>
+        </ul>
+    </section>
+
+    <section id="contact-details">
+        <h2>Contact Details</h2>
+        <p>Contact information for hostel administration.</p>
+        <ul>
+            <li>SDM Educational Society</li>
+            <li>Ujire – 574240, D.K., Karnataka, India</li>
+            <li>Tel: 08256 – 236225, 236488</li>
+            <li>Fax: 236220</li>
+            <li>Website: <a href="https://sdmesociety.in" target="_blank">sdmesociety.in</a></li>
+            <li>The Principal</li>
+            <li>Sri Dharmasthala Manjunatheshwara Polytechnic</li>
+            <li>Ujire – 574 240, D.K., Karnataka, India</li>
+            <li>Phone: 08256-236600, 9845893731, 9880724085</li>
+            <li>Email: <a href="mailto:principal@sdmpolytechnic.in">principal@sdmpolytechnic.in</a></li>
+            <li>Office Email: <a href="mailto:office@sdmpolytechnic.in">office@sdmpolytechnic.in</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hostel Facility. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

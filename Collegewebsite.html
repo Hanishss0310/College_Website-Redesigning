@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDM POLYTECHNIC</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+    color: #333;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #a2b9bc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img#logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+header h1#head1 {
+    font-family: 'Baskervville SC', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+section.main-content {
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+section.main-content img#collegefront {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+section.main-content #veer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+section.main-content #veer img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+section.main-content #veer p#p1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+section.about-section {
+    background-color: #878f99;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.about-section h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+section.about-section nav {
+    margin-bottom: 20px;
+}
+
+section.about-section nav a {
+    margin: 0 10px;
+}
+
+section.about-section .about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #6b5b95;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer .footer-text {
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header img#logo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1#head1 {
+        font-size: 20px;
+    }
+}
+
+.campus1{
+   height: 200px;
+   width: 200px;
+   float: left;
+
+}
+</style>
+<body>
+<div class="wave"></div>
+<div class="wave"></div>
+<div class="wave"></div>
+
+<header>
+    <div class="container">
+        <img id="logo" src="collegelogo.jpeg" alt="College Logo">
+        <h1 id="head1">SHRI DHARMASTHALA MANJUNATHESHWARA POLYTECHNIC, UJIRE - 573201</h1>
+    </div>
+    <nav>
+        <a href="./admission.html">Admission</a>
+        <a href="./departments.html">Departments</a>
+        <a href="./library.html">Library</a>
+        <a href="./photogallery.html">Photo Gallery</a>
+        <a href="./hostel.html">Hostel Facility</a>
+    </nav>
+</header>
+
+<section class="main-content">
+    <div class="container">
+        <img id="collegefront" src="sdmhomefirstimg.jpg" alt="College Front">
+        <div id="veer">
+            <img src="./veerendrahegde.jpg" alt="Dr. D. Veerendra Heggade">
+            <p id="p1">
+                <i>Dr. D. Veerendra Heggade is a multifaceted personality known for his contributions as a social reformer, educationist, and philanthropist. He is the guiding force behind SDME Society and has been instrumental in various developmental projects across Karnataka.</i>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="about-section">
+    <div class="container">
+        <h2>ABOUT US:</h2>
+        <nav>
+            <a href="./faculty.html">Faculty</a>
+            <a href="./address.html">Address</a>
+            <a href="./studentspace.html">Student Space</a>
+            <a href="./events.html">Events</a>
+            <a href="./exams.html">Exams register</a>
+        </nav>
+        <p class="about-text">
+            College life at SDM Polytechnic offers a transformative experience with a strong academic environment, diverse social dynamics, and significant personal growth opportunities. Students engage in critical thinking, explore various subjects, and develop essential life skills.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p class="footer-text">Thank you for visiting SDM Polytechnic. Come back soon!</p>
+</footer>
+
+</body>
+</html>

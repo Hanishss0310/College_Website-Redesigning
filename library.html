@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
+
+<body>
+    <div class="container">
+      <center>  <h1>Library Management</h1></center>
+        
+        <!-- Books Available Section -->
+        <div class="section">
+            <h2>Books Available</h2>
+            <label for="books-available">Number of Books:</label>
+            <input type="number" id="books-available" name="books-available">
+        </div>
+
+        <!-- Books Lending Section -->
+        <div class="section">
+            <h2>Books Lending</h2>
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title">
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date">
+        </div>
+
+        <!-- Due Date and Loan Status Section -->
+        <div class="section">
+            <h2>Due Date and Loan Status</h2>
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date">
+
+            <label for="loan-status">Loan Status:</label>
+            <select id="loan-status" name="loan-status">
+                <option value="not-issued">Not Issued</option>
+                <option value="issued">Issued</option>
+                <option value="returned">Returned</option>
+            </select>
+        </div>
+
+        <!-- Due Amount Section -->
+        <div class="section">
+            <h2>Due Amount</h2>
+            <label for="due-amount">Amount Due:</label>
+            <input type="text" id="due-amount" name="due-amount">
+        </div>
+
+    </div>
+</body>
+</html>
